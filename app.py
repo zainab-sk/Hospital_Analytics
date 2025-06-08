@@ -10,8 +10,8 @@ sns.set_theme(style="whitegrid", palette="pastel")
 
 # 📁 Load Data
 df = pd.read_csv("Patient's_Data.csv")
-
-
+df
+"# 🔧 Clean column names"
 df.columns = (
     df.columns
     .str.strip()
@@ -73,7 +73,7 @@ def filter_highest_lowest(series_or_df, filter_type="All", agg_func='count'):
 
 # Dashboard Title
 st.title("🏥 Hospital Dashboard – Visual Analysis")
-
+st.markdown("Visuals extracted from hospital data with filters for doctor, month, visit type, and highlight.")
 
 # 1️⃣ Gender Distribution
 df['gender'] = df['gender'].fillna('Unknown').str.strip().str.lower()
