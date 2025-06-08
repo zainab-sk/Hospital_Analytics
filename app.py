@@ -6,24 +6,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import calendar
 
-import subprocess
-
-# Check installed packages in Streamlit Cloud environment
-print(subprocess.getoutput("pip list"))
-
-# Check seaborn version if installed
-try:
-    import seaborn as sns
-    print("Seaborn version:", sns.__version__)
-except ModuleNotFoundError:
-    print("Seaborn not found!")
 
 sns.set_theme(style="whitegrid", palette="pastel")
 
 # 📁 Load Data
 df = pd.read_csv("Patient's_Data.csv")
-df
-"# 🔧 Clean column names"
+
 df.columns = (
     df.columns
     .str.strip()
