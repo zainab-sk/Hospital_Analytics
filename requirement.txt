@@ -1,4 +1,9 @@
 streamlit
 pandas
 matplotlib
+<<<<<<< HEAD:requirement.txt
 seaborn
+=======
+seaborn==0.13.2
+plotly.express
+>>>>>>> 7531f97 (✅ Update requirements and add gitignore + dataset):requirements.txt
